@@ -1,0 +1,7 @@
+K-MEANS CLUSTERING IN PYTHON
+
+K-means clustering is an iterative clustering algorithm that aims to find local maxima in each iteration.
+Initially, desired number of clusters are chosen. In our example, we know there are three classes involved, so we program the algorithm to group the data into three classes by passing the parameter “n_clusters” into our k-means model.
+Randomly, three points (inputs) are assigned into three clusters. Based on the centroid distance between each point, the next given inputs are segregated into respected clusters and the centroids are re-computed for all the clusters.
+Each centroid of a cluster is a collection of feature values which define the resulting groups. Examining the centroid feature weights can be used to qualitatively interpret what kind of group each cluster represent.
+We import the k-means model from scikit-learn library, fit out features and predict.
