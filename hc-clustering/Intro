@@ -36,4 +36,12 @@ hc-clustering
       
         The number of parameters is set to 2 using the n_clusters parameter while the affinity is set to "euclidean" (distance between the datapoints).
         Linkage parameter is set to "ward", which minimizes the variant between the clusters.
+     
+    Divisive Hierarchical clustering
+      1.It starts by including all objects in a single large cluster. At each step of iteration, the most heterogeneous cluster is divided into two. 
+      2.The process is iterated until all objects are in their own cluster.  
+      3.It doesn’t matter if we have 10 or 1000 data points. All these points will belong to the same cluster at the beginning.
+      4.At each iteration, we split the farthest point in the cluster and repeat this process until each cluster only contains a single point.
+
+
     
