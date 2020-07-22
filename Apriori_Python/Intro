@@ -1,0 +1,8 @@
+Apriori Algorithm 
+
+      1.It is a Machine Learning algorithm which is used to gain insight into the structured relationships between different items involved.
+      2.Apriori algorithm finds the most frequent itemsets or elements in a transaction database and identifies association rules between the items 
+      3.The most prominent practical application of the algorithm is to recommend products based on the products already present in the user’s cart.
+      4.The algorithm uses a “bottom-up” approach, where frequent subsets are extended one item at once (candidate generation) and groups of candidates are 
+        tested against the data.The algorithm terminates when no further successful rules can be derived from the data.
+        
