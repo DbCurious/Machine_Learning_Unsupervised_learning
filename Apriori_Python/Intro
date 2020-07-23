@@ -5,4 +5,27 @@ Apriori Algorithm
       3.The most prominent practical application of the algorithm is to recommend products based on the products already present in the user’s cart.
       4.The algorithm uses a “bottom-up” approach, where frequent subsets are extended one item at once (candidate generation) and groups of candidates are 
         tested against the data.The algorithm terminates when no further successful rules can be derived from the data.
+      5.There are three major components of the Apriori algorithm:
+        a) Support
+            Support refers to the popularity of item and can be calculated by finding the number of transactions containing a particular item divided by the total number of transactions.
+            Support(item A) = (Transactions containing (item A))/(Total Items)
+        b) Confidence
+            Confidence refers to the likelihood that an item B is also bought if item A is bought. It can be calculated by finding the number of transactions where A and B are bought together, 
+            divided by the total number of transactions where A is bought.
+            Confidence(A → B) = (Transactions containing both (A and B))/(Transactions containing A)
+        c) Lift  
+            Lift refers to the increase in the ratio of the sale of B when A is sold.
+            Lift(A→B) = (Confidence (A→B))/(Support (B))
+            
+            Association rule by Lift
+             lift = 1 → There is no association between A and B.
+             lift < 1→ A and B are unlikely to be bought together.
+             lift > 1 → greater the lift greater is the likelihood of buying both products together.
+      
+      6.Steps to approach
+        a.Set a minimum value for support and confidence. This means that we are only interested in finding rules for the items that have certain default existence (e.g. support)
+          and have a minimum value for co-occurrence with other items (e.g. confidence).
+        b.Extract all the subsets having a higher value of support than a minimum threshold.
+        c.Select all the rules from the subsets with confidence value higher than the minimum threshold.
+        d.Order the rules by descending order of Lift.
         
