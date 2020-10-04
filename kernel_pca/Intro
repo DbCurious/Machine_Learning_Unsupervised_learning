@@ -1,8 +1,10 @@
 PRINCIPAL COMPONENT ANALYSIS: 
     1.It's a tool which is used to reduce the dimension of the data. It allows us to reduce the dimension of the data without much loss of information. 
-    2.If the dataset is not linearly separable, we need to apply the Kernel PCA algorithm. It is similar to PCA except that it uses one of the kernel tricks to first map the non-linear features to a higher dimension,
+    2.PCA is an unsupervised learning algorithm as the directions of these components is calculated purely from the explanatory feature set without any reference to response variables.
+    3.If the dataset is not linearly separable, we need to apply the Kernel PCA algorithm. It is similar to PCA except that it uses one of the kernel tricks to first map the non-linear features to a higher dimension,
       then it extracts the principal components as same as PCA.
-    3.PCA reduces the dimension by finding a few orthogonal linear combinations (principal components) of the original variables with the largest variance.
+    4.PCA reduces the dimension by finding a few orthogonal linear combinations (principal components) of the original variables with the largest variance.
+     
     
     #Applying Kernel PCA
 
